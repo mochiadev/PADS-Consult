@@ -150,33 +150,33 @@
                     Us</a>
                 <div class="relative group">
                     <button
-                        class="flex items-center gap-1 text-brand-secondary font-bold px-4 py-2 rounded-lg bg-brand-primary/10 transition-all duration-300 transform scale-105">
+                        class="flex items-center gap-1 text-brand-lightBlue font-bold px-4 py-2 rounded-lg bg-brand-lightBlue/10 transition-all duration-300 transform scale-105">
                         Services <i class="ph ph-caret-down text-sm"></i>
                     </button>
                     <div
                         class="absolute top-full left-0 w-72 bg-white shadow-2xl rounded-xl py-3 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 z-50 transform origin-top scale-95 group-hover:scale-100">
                         <a href="../services.html"
-                            class="block px-5 py-3 text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary font-medium transition-colors">
+                            class="block px-5 py-3 text-gray-700 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue font-medium transition-colors">
                             <i class="ph ph-grid-four mr-2"></i> All Services
                         </a>
                         <div class="border-t border-gray-100 my-2"></div>
                         <a href="audit-accounting.html"
-                            class="block px-5 py-2.5 text-brand-primary font-semibold bg-brand-primary/5">Audit &
+                            class="block px-5 py-2.5 text-brand-lightBlue font-semibold bg-brand-lightBlue/10">Audit &
                             Accounting</a>
                         <a href="tax-advisory.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Tax
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Tax
                             Advisory & Outsourcing</a>
                         <a href="company-secretarial.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Company
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Company
                             Secretarial Services</a>
                         <a href="financial-management.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Financial
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Financial
                             Management & Consulting</a>
                         <a href="business-planning.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Business
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Business
                             Planning</a>
                         <a href="capacity-building.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Organizational
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Organizational
                             Capacity Building</a>
                     </div>
                 </div>
@@ -204,26 +204,27 @@
                     <button @click="expanded = !expanded"
                         class="flex items-center justify-between w-full text-brand-secondary font-medium text-lg py-2">
                         <span>Services</span>
-                        <i :class="expanded ? 'ph-caret-up' : 'ph-caret-down'" class="ph text-brand-primary"></i>
+                        <i :class="expanded ? 'ph-caret-up' : 'ph-caret-down'" class="ph text-brand-lightBlue"></i>
                     </button>
                     <div x-show="expanded" x-collapse class="flex flex-col gap-2 pl-4 mt-2 bg-gray-50 rounded-lg p-2">
                         <a href="../services.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-base flex items-center gap-2 font-medium">
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-base flex items-center gap-2 font-medium">
                             <i class="ph ph-grid-four"></i> All Services
                         </a>
                         <a href="audit-accounting.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-sm">Audit & Accounting</a>
-                        <a href="tax-advisory.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Tax
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Audit & Accounting</a>
+                        <a href="tax-advisory.html" class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Tax
                             Advisory & Outsourcing</a>
                         <a href="company-secretarial.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-sm">Company Secretarial Services</a>
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Company Secretarial
+                            Services</a>
                         <a href="financial-management.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-sm">Financial Management &
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Financial Management &
                             Consulting</a>
                         <a href="business-planning.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-sm">Business Planning</a>
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Business Planning</a>
                         <a href="capacity-building.html"
-                            class="text-gray-600 hover:text-brand-primary py-2 text-sm">Organizational Capacity
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Organizational Capacity
                             Building</a>
                     </div>
                 </div>
@@ -401,65 +402,145 @@
     <!-- Footer -->
     <footer class="bg-brand-secondary text-white pt-12 pb-6">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
                 <div>
                     <img src="../assets/images/footerlogo.png" alt="PAD Consult"
-                        class="h-16 md:h-20 lg:h-24 w-auto mb-4">
-                    <p class="text-gray-400 text-sm">Delivering high-quality audit, tax, and advisory services.</p>
+                        class="h-16 md:h-20 lg:h-24 w-auto mb-4" />
+                    <p class="text-gray-400 leading-relaxed text-sm mb-4">
+                        Delivering high-quality audit, tax, and advisory
+                        services with a focus on building long-term
+                        relationships.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-lightBlue transition-colors">
+                            <i class="ph ph-facebook-logo"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-lightBlue transition-colors">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-lightBlue transition-colors">
+                            <i class="ph ph-twitter-logo"></i>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Services -->
                 <div>
-                    <h4 class="font-bold mb-4 text-brand-gold">Services</h4>
+                    <h4 class="text-lg font-bold mb-4 text-brand-gold">
+                        Our Services
+                    </h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="audit-accounting.html"
+                        <li>
+                            <a href="audit-accounting.html"
                                 class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Audit & Accounting</a></li>
-                        <li><a href="tax-advisory.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Tax Advisory & Outsourcing</a></li>
-                        <li><a href="company-secretarial.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Company Secretarial Services</a></li>
-                        <li><a href="financial-management.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Financial Management & Consulting</a></li>
-                        <li><a href="business-planning.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Business Planning</a></li>
-                        <li><a href="capacity-building.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2">Organizational
-                                Capacity Building</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4 text-brand-gold">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="../index.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Home</a></li>
-                        <li><a href="../about.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>About Us</a></li>
-                        <li><a href="../enterprise.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Software Training</a></li>
-                        <li><a href="../contact.html"
-                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
-                                    class="ph ph-caret-right text-xs"></i>Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4 text-brand-gold">Contact</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li class="flex items-center gap-2"><i class="ph ph-phone text-brand-lightBlue"></i>024 591 2363
+                                    class="ph ph-caret-right text-xs"></i>Audit & Accounting</a>
                         </li>
-                        <li class="flex items-center gap-2"><i class="ph ph-envelope text-brand-lightBlue"></i><a
-                                href="mailto:padconsults@gmail.com"
-                                class="hover:text-brand-lightBlue transition-colors">padconsults@gmail.com</a></li>
+                        <li>
+                            <a href="tax-advisory.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Tax Advisory & Outsourcing</a>
+                        </li>
+                        <li>
+                            <a href="company-secretarial.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Company Secretarial Services</a>
+                        </li>
+                        <li>
+                            <a href="financial-management.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Financial Management & Consulting</a>
+                        </li>
+                        <li>
+                            <a href="business-planning.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Business Planning</a>
+                        </li>
+                        <li>
+                            <a href="capacity-building.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Organizational Capacity Building</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-brand-gold">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>
+                            <a href="../index.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="../about.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>About Us</a>
+                        </li>
+                        <li>
+                            <a href="../services.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Services</a>
+                        </li>
+                        <li>
+                            <a href="../enterprise.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Software Training</a>
+                        </li>
+
+                        <li>
+                            <a href="../contact.html"
+                                class="hover:text-brand-lightBlue transition-colors flex items-center gap-2"><i
+                                    class="ph ph-caret-right text-xs"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-brand-gold">
+                        Contact Us
+                    </h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-map-pin text-brand-lightBlue text-lg mt-0.5"></i>
+                            <span>MRQH+JGP, Ritz Junction,<br />Madina Adenta
+                                High Way, Accra</span>
+                        </li>
+                        <li class="flex flex-col gap-1" x-data="{ expanded: false }">
+                            <div class="flex items-center gap-3">
+                                <i class="ph ph-phone text-brand-lightBlue text-lg"></i>
+                                <span>024 591 2363 / 055 274 4179</span>
+                                <button @click="expanded = !expanded"
+                                    class="hover:text-brand-lightBlue transition-colors focus:outline-none"
+                                    aria-label="Toggle more phone numbers">
+                                    <i class="ph" :class="expanded ? 'ph-caret-up' : 'ph-caret-down'"></i>
+                                </button>
+                            </div>
+                            <div x-show="expanded" x-collapse class="pl-8 text-gray-400 text-sm">
+                                <span>024 166 2867 / 054 236 5050</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph ph-envelope text-brand-lightBlue text-lg"></i>
+                            <a href="mailto:padconsults@gmail.com"
+                                class="hover:text-brand-lightBlue transition-colors">padconsults@gmail.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>
+
             <div class="border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
-                <p>&copy; <span id="currentYear"></span> PAD Consult Services. All rights reserved.</p>
+                <p>
+                    &copy; <span id="currentYear"></span> PAD Consult
+                    Services. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>

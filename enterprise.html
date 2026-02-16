@@ -164,33 +164,33 @@
                     <div
                         class="absolute top-full left-0 w-72 bg-white shadow-2xl rounded-xl py-3 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 z-50 transform origin-top scale-95 group-hover:scale-100">
                         <a href="services.html"
-                            class="block px-5 py-3 text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary font-medium transition-colors">
+                            class="block px-5 py-3 text-gray-700 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue font-medium transition-colors">
                             <i class="ph ph-grid-four mr-2"></i> All Services
                         </a>
                         <div class="border-t border-gray-100 my-2"></div>
                         <a href="services/audit-accounting.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Audit
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Audit
                             &
                             Accounting</a>
                         <a href="services/tax-advisory.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Tax
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Tax
                             Advisory & Outsourcing</a>
                         <a href="services/company-secretarial.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Company
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Company
                             Secretarial Services</a>
                         <a href="services/financial-management.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Financial
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Financial
                             Management & Consulting</a>
                         <a href="services/business-planning.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Business
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Business
                             Planning</a>
                         <a href="services/capacity-building.html"
-                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-primary/5 hover:text-brand-primary transition-colors">Organizational
+                            class="block px-5 py-2.5 text-gray-600 hover:bg-brand-lightBlue/10 hover:text-brand-lightBlue transition-colors">Organizational
                             Capacity Building</a>
                     </div>
                 </div>
                 <a href="enterprise.html"
-                    class="text-brand-secondary font-bold px-4 py-2 rounded-lg bg-brand-primary/10 transition-all duration-300 transform scale-105">Software
+                    class="text-brand-lightBlue font-bold px-4 py-2 rounded-lg bg-brand-lightBlue/10 transition-all duration-300 transform scale-105">Software
                     Training</a>
                 <a href="contact.html"
                     class="rhombus-primary px-6 py-2.5 font-bold hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 rhombus-btn glow-btn">
@@ -203,33 +203,46 @@
         </div>
 
         <!-- Mobile Menu -->
-                <div x-show="mobileMenuOpen" x-cloak x-transition
+        <div x-show="mobileMenuOpen" x-cloak x-transition
             class="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 py-6 px-6 h-[calc(100vh-80px)] overflow-y-auto pb-32">
             <nav class="flex flex-col gap-4">
-                <a href="index.html" class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">Home</a>
-                <a href="about.html" class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">About Us</a>
-                
+                <a href="index.html"
+                    class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">Home</a>
+                <a href="about.html"
+                    class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">About Us</a>
+
                 <!-- Services Dropdown -->
                 <div x-data="{ expanded: false }" class="border-b border-gray-100 pb-2">
-                    <button @click="expanded = !expanded" 
+                    <button @click="expanded = !expanded"
                         class="flex items-center justify-between w-full text-brand-secondary font-medium text-lg py-2">
                         <span>Services</span>
-                        <i :class="expanded ? 'ph-caret-up' : 'ph-caret-down'" class="ph text-brand-primary"></i>
+                        <i :class="expanded ? 'ph-caret-up' : 'ph-caret-down'" class="ph text-brand-lightBlue"></i>
                     </button>
                     <div x-show="expanded" x-collapse class="flex flex-col gap-2 pl-4 mt-2 bg-gray-50 rounded-lg p-2">
-                        <a href="services.html" class="text-gray-600 hover:text-brand-primary py-2 text-base flex items-center gap-2 font-medium">
+                        <a href="services.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-base flex items-center gap-2 font-medium">
                             <i class="ph ph-grid-four"></i> All Services
                         </a>
-                        <a href="services/audit-accounting.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Audit & Accounting</a>
-                        <a href="services/tax-advisory.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Tax Advisory & Outsourcing</a>
-                        <a href="services/company-secretarial.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Company Secretarial Services</a>
-                        <a href="services/financial-management.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Financial Management & Consulting</a>
-                        <a href="services/business-planning.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Business Planning</a>
-                        <a href="services/capacity-building.html" class="text-gray-600 hover:text-brand-primary py-2 text-sm">Organizational Capacity Building</a>
+                        <a href="services/audit-accounting.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Audit & Accounting</a>
+                        <a href="services/tax-advisory.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Tax Advisory & Outsourcing</a>
+                        <a href="services/company-secretarial.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Company Secretarial
+                            Services</a>
+                        <a href="services/financial-management.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Financial Management &
+                            Consulting</a>
+                        <a href="services/business-planning.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Business Planning</a>
+                        <a href="services/capacity-building.html"
+                            class="text-gray-600 hover:text-brand-lightBlue py-2 text-sm">Organizational Capacity
+                            Building</a>
                     </div>
                 </div>
 
-                <a href="enterprise.html" class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">Software Training</a>
+                <a href="enterprise.html"
+                    class="text-brand-secondary font-medium text-lg py-2 border-b border-gray-100">Software Training</a>
                 <a href="contact.html"
                     class="rhombus-primary w-full justify-center font-bold py-3 hover:-translate-y-1 transition-all rhombus-btn mt-4">
                     <span>Contact Us</span>
