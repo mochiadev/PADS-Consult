@@ -260,18 +260,24 @@
 
     <!-- Hero -->
     <section class="relative overflow-hidden pt-32 pb-20 border-b border-gray-100">
-        <div class="absolute inset-0 bg-custom-pattern pointer-events-none z-0"></div>
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/service.webp" alt="Services Background" class="w-full h-full object-cover object-center" />
+            <!-- Dark Overlay for Readability -->
+            <div class="absolute inset-0 bg-brand-secondary/80 mix-blend-multiply"></div>
+        </div>
+        
         <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="inline-flex items-center gap-2 bg-brand-darkBlue px-4 py-2 rounded-full text-white text-sm font-medium mb-6"
+            <div class="inline-flex items-center gap-2 bg-brand-darkBlue/80 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm font-medium mb-6 border border-white/10"
                 data-aos="fade-up">
                 <i class="ph ph-briefcase text-brand-gold"></i>
                 <span>What We Offer</span>
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-secondary mb-6"
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6"
                 data-aos="fade-up" data-aos-delay="100">
                 Our <span class="text-brand-primary">Services</span>
             </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
                 Comprehensive financial solutions tailored to meet your business needs and drive sustainable growth.
             </p>
         </div>

@@ -261,19 +261,25 @@
 
     <!-- Hero -->
     <section class="relative overflow-hidden pt-32 pb-20 border-b border-gray-100">
-        <div class="absolute inset-0 bg-custom-pattern pointer-events-none z-0"></div>
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/about0.avif" alt="About Us Background" class="w-full h-full object-cover object-center" />
+            <!-- Dark Overlay for Readability -->
+            <div class="absolute inset-0 bg-brand-secondary/80 mix-blend-multiply"></div>
+        </div>
+
         <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="inline-flex items-center gap-2 bg-brand-darkBlue px-4 py-2 rounded-full text-white text-sm font-medium mb-6"
+            <div class="inline-flex items-center gap-2 bg-brand-darkBlue/80 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm font-medium mb-6 border border-white/10"
                 data-aos="fade-up">
                 <i class="ph ph-info text-brand-gold"></i>
                 <span>About PAD Consult Services</span>
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-brand-secondary mb-6"
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6"
                 data-aos="fade-up" data-aos-delay="100">
-                Your Trusted Partners in
+                Your Trusted Partners in<br class="hidden md:block" />
                 <span class="text-brand-primary">Financial Advisory Excellence</span>
             </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
                 We are a team of dedicated professionals committed to
                 delivering exceptional audit, tax, and advisory services.
             </p>
@@ -459,11 +465,11 @@
                     experience across various industries.
                 </p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <!-- Team Member 1 -->
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center"
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center flex flex-col items-center"
                     data-aos="fade-up">
-                    <img src="assets/images/ceo.jpeg" alt="Paul Nii Anang Boye"
+                    <img src="assets/images/team1.jpeg" alt="Paul Nii Anang Boye"
                         class="w-48 h-48 rounded-2xl object-cover mx-auto mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300" />
                     <h3 class="text-xl font-heading font-bold text-white mb-2">
                         Paul Nii Anang Boye
@@ -474,35 +480,17 @@
                     <p class="text-white/70 text-sm mb-4">
                         19 years of experience
                     </p>
-                    <a href="tel:0245912363"
-                        class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
-                        <i class="ph ph-phone"></i> 024-591-2363
-                    </a>
+                    <div class="mt-auto">
+                        <a href="tel:0245912363"
+                            class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
+                            <i class="ph ph-phone"></i> 024-591-2363
+                        </a>
+                    </div>
                 </div>
                 <!-- Team Member 2 -->
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center"
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center flex flex-col items-center"
                     data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-                        alt="Clifford Boafo"
-                        class="w-48 h-48 rounded-2xl object-cover mx-auto mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300" />
-                    <h3 class="text-xl font-heading font-bold text-white mb-2">
-                        Clifford Boafo
-                    </h3>
-                    <p class="text-brand-primary font-medium text-sm mb-2">
-                        BSc (Accounting), MBA (Fin), FCCA, CA (Gh)
-                    </p>
-                    <p class="text-white/70 text-sm mb-4">
-                        26 years of experience
-                    </p>
-                    <a href="tel:0244347938"
-                        class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
-                        <i class="ph ph-phone"></i> 024-434-7938
-                    </a>
-                </div>
-                <!-- Team Member 3 -->
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/images/sec.jpeg" alt="Winnie Anani"
+                    <img src="assets/images/team2.jpeg" alt="Winnie Anani"
                         class="w-48 h-48 rounded-2xl object-cover mx-auto mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300" />
                     <h3 class="text-xl font-heading font-bold text-white mb-2">
                         Winnie Anani
@@ -513,25 +501,65 @@
                     <p class="text-white/70 text-sm mb-4">
                         Secretarial Services
                     </p>
-                    <a href="tel:0542365050"
-                        class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
-                        <i class="ph ph-phone"></i> 054-236-5050
-                    </a>
+                    <div class="mt-auto">
+                        <a href="tel:0542365050"
+                            class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
+                            <i class="ph ph-phone"></i> 054-236-5050
+                        </a>
+                    </div>
                 </div>
-            </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center flex flex-col items-center"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/team3.jpeg" alt="Adams Tahiru Nartey"
+                        class="w-48 h-48 rounded-2xl object-cover mx-auto mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300" />
+                    <h3 class="text-xl font-heading font-bold text-white mb-2">
+                        Mr. Adams Tahiru Nartey
+                    </h3>
+                    <p class="text-brand-primary font-medium text-sm mb-2">
+                        Senior Audit Manager
+                    </p>
+                    <p class="text-white/70 text-sm mb-4">
+                        CA, MBA (Finance)
+                    </p>
+                    <div class="mt-auto">
+                        <a href="tel:0244850607"
+                            class="inline-flex items-center gap-2 text-white/90 hover:text-brand-primary transition-colors text-sm border border-white/20 rounded-full px-4 py-1">
+                            <i class="ph ph-phone"></i> 024-485-0607
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Second Row -->
+                <!-- Team Member 4 -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center flex flex-col items-center md:col-span-1 lg:col-span-1"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/team4.jpeg" alt="Andrew’s Amankwaa"
+                        class="w-48 h-48 rounded-2xl object-cover mx-auto mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300" />
+                    <h3 class="text-xl font-heading font-bold text-white mb-2">
+                        Mr. Andrew’s Amankwaa
+                    </h3>
+                    <p class="text-brand-primary font-medium text-sm mb-2">
+                        Senior Audit Manager
+                    </p>
+                    <p class="text-white/70 text-sm mb-4">
+                        CPA, CA, MSc(ICT), MSc(Public Policy), MSc(Fin. Risk Mgt.) MBA(Accounting & Tax)
+                    </p>
+                </div>
 
-            <!-- Other Staff -->
-            <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 text-center max-w-4xl mx-auto"
-                data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-xl font-heading font-bold text-white mb-4">
-                    Other Staff
-                </h3>
-                <p class="text-white/80 leading-relaxed">
-                    PAD Consult Services also has a number of qualified
-                    professionals with a wide range of experience in
-                    industry and public practice who provide excellent
-                    support to the above listed key personnel.
-                </p>
+                <!-- Other Staff -->
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 text-center flex flex-col items-center justify-center md:col-span-1 lg:col-span-2 h-full"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-heading font-bold text-white mb-4">
+                        Other Staff
+                    </h3>
+                    <p class="text-white/80 leading-relaxed max-w-2xl mx-auto">
+                        PAD Consult Services also has a number of qualified
+                        professionals with a wide range of experience in
+                        industry and public practice who provide excellent
+                        support to the above listed key personnel.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
