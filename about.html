@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -15,6 +15,7 @@
             rel="stylesheet"
         />
         <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <link rel="preload" as="image" href="assets/images/about0.avif" type="image/avif" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -368,6 +369,8 @@
                     src="assets/images/about0.avif"
                     alt="About Us Background"
                     class="w-full h-full object-cover object-center"
+                    fetchpriority="high"
+                    decoding="async"
                 />
                 <!-- Dark Overlay for Readability -->
                 <div
